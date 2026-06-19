@@ -5,25 +5,40 @@
     box-sizing: border-box;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
+
 body {
-    background-color: #000000;
+    background-color: #03050a; /* Dark blue/black matching the 3D fog */
     color: #ffffff;
+    overflow: hidden; /* Stops the page from scrolling */
 }
+
+/* Make the 3D Canvas act as a fullscreen background */
+#scene {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; /* Pushes the 3D drawing behind your text */
+}
+
 /* Top bar style */
 .navbar {
     width: 100%;
     height: 48px;
-    background-color: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(20px);
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    padding-right: 32px;
+    justify-content: flex-end; 
+    padding-right: 32px;       
     position: fixed;
     top: 0;
     left: 0;
     z-index: 10;
 }
+
+/* "Smart Library" Text Style */
 .top-logo {
     color: #ffffff;
     font-size: 14px;
@@ -31,31 +46,30 @@ body {
     letter-spacing: -0.2px;
     opacity: 0.9;
 }
-/* Fullscreen Hero Area with AI lab background */
+
+/* Fullscreen Hero Area */
 .hero-section {
     position: relative;
     width: 100%;
-    height: 100vh;
-
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-                      url('images/creative-ai-lab-concept-image.jpg');
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
+    height: 100vh; 
+    
+    /* Removed the background-image because the 3D canvas is handling it now! */
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; 
+    align-items: center;     
 }
+
+/* Typography styling for "Kutubxona AI" */
 .hero-content h1 {
-    font-size: 64px;
+    font-size: 64px; 
     font-weight: 600;
     letter-spacing: -1px;
     color: #ffffff;
     text-align: center;
-    text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+    text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.8); /* Darker shadow to stand out against glowing blue lines */
 }
+
+/* Responsive adjustments for phones */
 @media (max-width: 768px) {
     .hero-content h1 {
         font-size: 40px;
