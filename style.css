@@ -36,15 +36,15 @@ body {
     opacity: 0.9;
 }
 
-/* Fullscreen Hero Area with a Premium Dark/Black Background */
+/* Fullscreen Hero Area with your Custom AI Lab Background */
 .hero-section {
     position: relative;
     width: 100%;
     height: 100vh; 
     
-    /* Premium dark abstract background and gradient overlay */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-                      url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1920'); 
+    /* Replaced with your uploaded image + a dark overlay to make white text pop */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                      url('creative-ai-lab-concept-image.jpg'); 
     
     background-size: cover;
     background-position: center;
