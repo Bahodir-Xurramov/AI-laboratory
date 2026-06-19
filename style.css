@@ -1,20 +1,14 @@
-/* Fullscreen Hero Area with Dark Texture Background */
-.hero-section {
-    position: relative;
-    width: 100%;
-    height: 100vh; 
-    
-    /* Premium dark abstract background image */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1920'); 
-    
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    
-    display: flex;
-    justify-content: center; 
-    align-items: center;     
+/* Reset default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
+
+body {
+    background-color: #000000;
+    color: #ffffff;
 }
 
 /* Top bar style */
@@ -25,8 +19,8 @@
     backdrop-filter: blur(20px);
     display: flex;
     align-items: center;
-    justify-content: flex-end; /* This forces the text to the RIGHT corner */
-    padding-right: 32px;       /* Adds some breathing room from the screen edge */
+    justify-content: flex-end; /* Pushes text to the RIGHT corner */
+    padding-right: 32px;       /* Spacing from screen edge */
     position: fixed;
     top: 0;
     left: 0;
@@ -42,14 +36,16 @@
     opacity: 0.9;
 }
 
-/* Fullscreen Hero Area */
+/* Fullscreen Hero Area with a Premium Dark/Black Background */
 .hero-section {
     position: relative;
     width: 100%;
     height: 100vh; 
     
-    /* Your background image path */
-    background-image: url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1920'); 
+    /* Premium dark abstract background and gradient overlay */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                      url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1920'); 
+    
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -62,12 +58,12 @@
 
 /* Typography styling for "Kutubxona AI" */
 .hero-content h1 {
-    font-size: 64px; /* Slightly larger for a bold statement look */
+    font-size: 64px; 
     font-weight: 600;
     letter-spacing: -1px;
     color: #ffffff;
     text-align: center;
-    text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
 }
 
 /* Responsive adjustments for phones */
