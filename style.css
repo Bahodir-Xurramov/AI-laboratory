@@ -27,3 +27,63 @@
         transform: scale(1.15) translate3d(16px, 10px, 0);
     }
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #03050a;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 40px;
+}
+
+.top-logo {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.hero-section {
+    position: fixed;
+    inset: 0;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.hero-content h1 {
+    color: white;
+    font-size: 72px;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 0 4px 30px rgba(0, 0, 0, 0.9);
+}
+
+#scene {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
