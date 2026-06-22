@@ -18,9 +18,8 @@ body {
     justify-content: center;
     padding: 48px;
     background:
-        radial-gradient(circle at 72% 34%, rgba(34, 211, 238, 0.22), transparent 32%),
-        radial-gradient(circle at 20% 80%, rgba(14, 165, 233, 0.12), transparent 35%),
-        linear-gradient(135deg, #020617, #061522 55%, #000000);
+        radial-gradient(circle at 70% 30%, rgba(14, 165, 233, 0.25), transparent 35%),
+        linear-gradient(135deg, #020617, #05070d 55%, #000000);
 }
 
 .lab-content {
@@ -64,20 +63,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 28px;
-    border-radius: 28px;
-    background:
-        radial-gradient(circle at center, rgba(34, 211, 238, 0.24), transparent 62%),
-        linear-gradient(135deg, #07111f, #020617);
-    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
+    background: #061522;
     overflow: hidden;
 }
 
 .robot-card img {
     width: 100%;
     max-width: 420px;
-    border-radius: 22px;
-    mix-blend-mode: screen;
+    background: #061522;
+    filter: brightness(0.9) contrast(1.08);
+    mix-blend-mode: multiply;
     animation: robotFloat 4s ease-in-out infinite;
 }
 
@@ -103,9 +98,5 @@ body {
 
     .lab-page {
         padding: 28px;
-    }
-
-    .robot-card {
-        padding: 18px;
     }
 }
