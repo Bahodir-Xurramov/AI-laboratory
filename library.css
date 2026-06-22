@@ -63,16 +63,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #061522;
+    background: transparent;
     overflow: hidden;
 }
 
 .robot-card img {
     width: 100%;
     max-width: 420px;
-    background: #061522;
-    filter: brightness(0.9) contrast(1.08);
-    mix-blend-mode: multiply;
+    padding: 0;
+    border-radius: 0;
+    background: transparent;
+    filter: brightness(0.95) contrast(1.1);
+    mix-blend-mode: darken;
     animation: robotFloat 4s ease-in-out infinite;
 }
 
