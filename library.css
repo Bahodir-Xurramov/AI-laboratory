@@ -18,14 +18,14 @@ body {
     justify-content: center;
     padding: 48px;
     background:
-        radial-gradient(circle at 72% 35%, rgba(14, 165, 233, 0.32), transparent 38%),
+        radial-gradient(circle at 72% 35%, rgba(14, 165, 233, 0.24), transparent 38%),
         linear-gradient(135deg, #020617, #05070d 55%, #000000);
 }
 
 .lab-content {
     width: min(1280px, 100%);
     display: grid;
-    grid-template-columns: 1fr 560px;
+    grid-template-columns: 1fr 620px;
     gap: 64px;
     align-items: center;
 }
@@ -64,31 +64,35 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: transparent;
-    overflow: visible;
+    min-height: 660px;
+    background: #000000;
+    overflow: hidden;
     z-index: 2;
 }
 
 .robot-card::before {
     content: "";
     position: absolute;
-    width: 560px;
-    height: 560px;
+    width: 620px;
+    height: 620px;
     border-radius: 50%;
-    background: rgba(14, 165, 233, 0.22);
-    filter: blur(80px);
-    z-index: -1;
+    background: rgba(14, 165, 233, 0.18);
+    filter: blur(95px);
+    z-index: 0;
 }
 
 .robot-card img {
-    width: 100%;
-    max-width: 560px;
+    position: relative;
+    z-index: 1;
+    width: 620px;
+    max-width: 100%;
+    height: auto;
     padding: 0;
     border-radius: 0;
-    background: transparent;
     opacity: 1;
-    filter: brightness(1.75) contrast(1.2) saturate(1.25);
-    mix-blend-mode: normal;
+    background: transparent;
+    filter: brightness(1.45) contrast(1.35) saturate(1.15);
+    mix-blend-mode: multiply;
     animation: robotFloat 4s ease-in-out infinite;
 }
 
@@ -117,12 +121,18 @@ body {
         padding: 28px;
     }
 
+    .robot-card {
+        min-height: 430px;
+    }
+
     .robot-card img {
-        max-width: 360px;
+        width: 390px;
+        max-width: 100%;
     }
 
     .robot-card::before {
-        width: 360px;
-        height: 360px;
+        width: 380px;
+        height: 380px;
+        filter: blur(70px);
     }
 }
