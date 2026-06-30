@@ -18,7 +18,7 @@ body {
     justify-content: center;
     padding: 48px;
     background:
-        radial-gradient(circle at 72% 35%, rgba(14, 165, 233, 0.24), transparent 38%),
+        radial-gradient(circle at 72% 35%, rgba(14, 165, 233, 0.22), transparent 38%),
         linear-gradient(135deg, #020617, #05070d 55%, #000000);
 }
 
@@ -60,39 +60,21 @@ body {
 }
 
 .robot-card {
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 660px;
-    background: #000000;
+    background: #f7f7f7;
     overflow: hidden;
-    z-index: 2;
-}
-
-.robot-card::before {
-    content: "";
-    position: absolute;
-    width: 620px;
-    height: 620px;
-    border-radius: 50%;
-    background: rgba(14, 165, 233, 0.18);
-    filter: blur(95px);
-    z-index: 0;
 }
 
 .robot-card img {
-    position: relative;
-    z-index: 1;
-    width: 620px;
+    width: 600px;
     max-width: 100%;
     height: auto;
-    padding: 0;
-    border-radius: 0;
     opacity: 1;
-    background: transparent;
-    filter: brightness(1.8) contrast(1.35) saturate(1.2);
-    mix-blend-mode: multiply;
+    filter: brightness(1.05) contrast(1.08) saturate(1.08);
+    mix-blend-mode: normal;
     animation: robotFloat 4s ease-in-out infinite;
 }
 
@@ -127,12 +109,5 @@ body {
 
     .robot-card img {
         width: 390px;
-        max-width: 100%;
-    }
-
-    .robot-card::before {
-        width: 380px;
-        height: 380px;
-        filter: blur(70px);
     }
 }
