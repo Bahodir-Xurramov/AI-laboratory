@@ -7,8 +7,8 @@
 body {
     min-height: 100vh;
     font-family: Arial, sans-serif;
-    background: #05070d;
-    color: white;
+    background: #ffffff;
+    color: #111111;
 }
 
 .lab-page {
@@ -17,9 +17,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 48px;
-    background:
-        radial-gradient(circle at 72% 35%, rgba(14, 165, 233, 0.22), transparent 38%),
-        linear-gradient(135deg, #020617, #05070d 55%, #000000);
+    background: #ffffff;
 }
 
 .lab-content {
@@ -31,7 +29,7 @@ body {
 }
 
 .eyebrow {
-    color: #5eead4;
+    color: #0f766e;
     font-size: 18px;
     margin-bottom: 16px;
 }
@@ -40,12 +38,13 @@ body {
     font-size: 56px;
     line-height: 1.05;
     margin-bottom: 24px;
+    color: #111111;
 }
 
 .lab-text p {
     font-size: 19px;
     line-height: 1.7;
-    color: rgba(255, 255, 255, 0.82);
+    color: #222222;
     margin-bottom: 18px;
 }
 
@@ -64,7 +63,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 660px;
-    background: #f7f7f7;
+    background: #ffffff;
     overflow: hidden;
 }
 
