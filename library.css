@@ -91,7 +91,7 @@ body {
     border-radius: 0;
     opacity: 1;
     background: transparent;
-    filter: brightness(1.45) contrast(1.35) saturate(1.15);
+    filter: brightness(1.8) contrast(1.35) saturate(1.2);
     mix-blend-mode: multiply;
     animation: robotFloat 4s ease-in-out infinite;
 }
